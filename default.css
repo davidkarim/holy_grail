@@ -1,0 +1,62 @@
+/* Holy Grail responsive basic template */
+* {border: 1px dashed black}
+header, footer {
+  border: 1px solid blue;
+  background-color: blue;
+  height: 50px;
+}
+nav {
+  border: 1px solid gray;
+  background-color: gray;
+  flex-grow: 1;
+  height: 80vh;
+}
+section {
+  border: 1px solid green;
+  background-color: green;
+  flex-grow: 2;
+  height: 80vh;
+}
+aside {
+  border: 1px solid purple;
+  background-color: purple;
+  flex-grow: 1;
+  height: 80vh;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* Small devices */
+@media only screen and (max-width: 480px) {
+  header, footer {
+    height: 200px;
+  }
+  header, footer, div, body, section, aside {
+    font-size: 60px;
+  }
+  div#main{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Lanrger devices and iPads */
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  header, footer {
+    height: 200px;
+  }
+  header, footer, div, body, section, aside {
+    font-size: 30px;
+  }
+  div#main{
+    display: flex;
+    flex-direction: column;
+  }
+}
